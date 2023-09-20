@@ -8,8 +8,16 @@
     </title>
 </head>
 <body>
-    <script src="https://apis.google.com/js/platform.js"></script>
-
-    <div class="g-ytsubscribe" data-channel="https://www.youtube.com/@abhishek_prasad9" data-layout="full" data-theme="dark" data-count="hidden"></div>
+   <a href="delete.php?id=22" class="confirmation">https://www.youtube.com/@abhishek_prasad9</a>
+...
+<script type="text/javascript">
+    var elems = document.getElementsByClassName('confirmation');
+    var confirmIt = function (e) {
+        if (!confirm('Are you sure?')) e.preventDefault();
+    };
+    for (var i = 0, l = elems.length; i < l; i++) {
+        elems[i].addEventListener('click', confirmIt, false);
+    }
+</script>
 </body>
 </html>
